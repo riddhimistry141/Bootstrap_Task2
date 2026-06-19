@@ -1,0 +1,91 @@
+.bg-pink{
+    background:#ff6b81;
+}
+
+.hero{
+    min-height:90vh;
+}
+
+.phone{
+    width: 100%;
+}
+
+.feature-card{
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+#stats-section.text-center h1{
+    font-size:3rem;
+    opacity:0;
+    transform:translateY(30px);
+}
+
+#stats-section.text-center p{
+    font-size:1rem;
+    opacity:0;
+}
+
+#stats-section.text-center h2{
+    opacity:0;
+    transform:translateY(-30px);
+}
+
+#stats-section.animate-in .text-center h2{
+    animation: slideInDown 0.8s ease-out forwards;
+}
+
+#stats-section.animate-in .text-center h1{
+    animation: slideInUp 0.8s ease-out forwards 0.2s;
+}
+
+#stats-section.animate-in .text-center p{
+    animation: fadeIn 1s ease-out forwards 0.4s;
+}
+
+@keyframes slideInUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideInDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+footer{
+    background:#081828;
+    color:white;
+}
+
+footer .nav-link.link-light:hover {
+    color: #ff6b81 !important;
+}
+
+html{
+    scroll-behavior:smooth;
+}
