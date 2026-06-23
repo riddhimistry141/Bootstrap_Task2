@@ -82,6 +82,16 @@ footer{
     color:white;
 }
 
+.app-store-btn:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
+}
+
+.navbar .nav-link.active {
+    font-weight: 700;
+}
+
 footer .nav-link.link-light:hover {
     color: #ff6b81 !important;
 }
